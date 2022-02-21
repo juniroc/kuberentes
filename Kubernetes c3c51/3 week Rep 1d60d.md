@@ -1,10 +1,5 @@
 # 3 week : ReplicaSet, DaemonSet, CronJob, Service - ClusterIP, LodePort, LoadBalancer
 
-풀스택 개발자가 유니콘처럼 존재
-
-AI 모델링과 MLOps 모두 하는 사람 유니콘처럼 존재
-
-→ 어느정도 실력만 있다면 모셔감
 
 ---
 
