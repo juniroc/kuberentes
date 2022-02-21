@@ -1,4 +1,4 @@
-# Volume (local)
+# Volume : local
 
 - 컨테이너 디렉토리를 외부 저장소와 연결해, 스토리지로 별도 설정
 → MySQL 같은 DB는 데이터가 유실되지 않도록 별도 저장소에 데이터를 저장해 Container를 만들때 이전 데이터 가져와야 함
@@ -14,7 +14,7 @@
 - Pod 안에 속한 컨테이너 간 디렉토리 공유 방법
 - 주로 `Side-car` 라는 패턴에서 사용, 특정 컨테이너에서 생성되는 로그 파일을 별도의 컨테이너(사이드카)가 수집하는 구조
 
-![Untitled](Volume%20(lo%20958a1/Untitled.png)
+![Untitled](Volume%20loc%20958a1/Untitled.png)
 
 `empty-dir.yml`
 
@@ -61,7 +61,7 @@ kubectl apply -f empty-dir.yml
 kubectl logs -f sidecar -c sidecar
 ```
 
-![Untitled](Volume%20(lo%20958a1/Untitled%201.png)
+![Untitled](Volume%20loc%20958a1/Untitled%201.png)
 
 - `app` 컨테이너 로그파일을 `sidecar` 컨테이너에서 처리하는 모습
 
@@ -69,7 +69,7 @@ kubectl logs -f sidecar -c sidecar
 
 - `Host_dir` 를 `container_dir` 에 연결하는 방법
 
-![Untitled](Volume%20(lo%20958a1/Untitled%202.png)
+![Untitled](Volume%20loc%20958a1/Untitled%202.png)
 
 `hostpath.yml`
 
@@ -102,10 +102,10 @@ kubectl exec -it host-log --sh
 
 `ls /host/var/log 검색결과`
 
-![Untitled](Volume%20(lo%20958a1/Untitled%203.png)
+![Untitled](Volume%20loc%20958a1/Untitled%203.png)
 
 `7번 서버 내부 디렉토리`
 
-![Untitled](Volume%20(lo%20958a1/Untitled%204.png)
+![Untitled](Volume%20loc%20958a1/Untitled%204.png)
 
 ### `local directory` 와 연결됨.

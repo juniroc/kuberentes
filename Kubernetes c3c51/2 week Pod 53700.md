@@ -1,19 +1,19 @@
-# 2 week (Pod, Namespace)
+# 2 week : Pod, Namespace
 
 - `MiniKube` 로 실습을 하지 않는 추세
 → 노드 하나만 있으므로, 어떻게든 2개이 상의 노드를 이용
 - `master` node 에 꼭 설치되어야하는 것들
 → `APIServer` , `ETCD` , `Kube-scheduler` 등..
 
-![Untitled](2%20week%20(Po%2053700/Untitled.png)
+![Untitled](2%20week%20Pod%2053700/Untitled.png)
 
 ---
 
 ### Env
 
-![Untitled](2%20week%20(Po%2053700/Untitled%201.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%201.png)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%202.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%202.png)
 
 - `yaml` 같은 파일로 `Template`, `Script` 등으로 설정을 지정해둔 방식
 - `Teraform` 이 나오기 전에는 Vagrant 가 많이 쓰였음
@@ -25,26 +25,26 @@
     - 테라폼은 프로그램 **코드를 통해 인프라 서버를 구축/운영** 할 수 있게 해주는 **오픈 소스 소프트웨어** 입니다.
     - 코드형 인프라를 뜻하는 `IaC(Infra as a code)` 도구(Tool)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%203.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%203.png)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%204.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%204.png)
 
 - 내꺼 공유기
 
-![Untitled](2%20week%20(Po%2053700/Untitled%205.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%205.png)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%206.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%206.png)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%207.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%207.png)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%208.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%208.png)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%209.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%209.png)
 
 - `etcd` 가 죽으면 `k8s` 가 제대로 작동하지 않음
 - `etcd` : 분산된 시스템 또는 클러스터의 설정 공유, 서비스 검색 및 스케줄러 조정을 위한 일관된 오픈소스, 분산형 키-값 저장소 (**k8s 기본데이터 저장소 정도로 생각**) `etcd`는 더욱 안전한 자동 업데이트를 지원하고, 호스트에 스케줄링되는 작업을 조정하며, 컨테이너에 대한 오버레이 네트워킹 설정을 지원
 
-![Untitled](2%20week%20(Po%2053700/Untitled%2010.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%2010.png)
 
 ---
 
@@ -75,14 +75,14 @@ spec:
 
 - `Containers`, `Ports` 등 s 를 붙여 복수 처리해주어야 함 (2개 이상 올 수 있음)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%2011.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%2011.png)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%2012.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%2012.png)
 
 - `Label` 은 중요하지만 `Option` 임
 
-![Untitled](2%20week%20(Po%2053700/Untitled%2013.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%2013.png)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%2014.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%2014.png)
 
-![Untitled](2%20week%20(Po%2053700/Untitled%2015.png)
+![Untitled](2%20week%20Pod%2053700/Untitled%2015.png)

@@ -1,1 +1,0 @@
-# 6 week (Deployment, StatefulSet)
