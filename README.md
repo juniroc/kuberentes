@@ -12,7 +12,7 @@
 
 [ETC](Kubernetes%20c3c51/ETC%20468cc.md)
 
-[Network_for_K8s](./K8s_Networ%20a4c3f.md)
+[Network for K8s - 오리뎅이 (writing)](./K8s_Networ%20a4c3f.md)
 
 ---
 
