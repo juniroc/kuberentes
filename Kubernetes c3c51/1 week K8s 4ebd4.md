@@ -127,5 +127,3 @@
 → 유명한 것들 위주로 공부하면 됨
 
 ![Untitled](1%20week%20K8s%204ebd4/Untitled%2032.png)
-
-![Untitled](1%20week%20K8s%204ebd4/Untitled%2033.png)

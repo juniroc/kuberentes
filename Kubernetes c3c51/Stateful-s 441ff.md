@@ -129,7 +129,7 @@ metadata:
   name: stateful-test
 spec:
   replicas: 1
-	serviceName: "statefulset-test"
+    serviceName: "statefulset-test"
   selector:
     matchLabels:
       type: db
