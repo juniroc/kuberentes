@@ -16,7 +16,7 @@
 
 ---
 ### Experiment
-[Bentoml on K8s](./Bentoml%20on%20k8s/README.md)
+[Bentoml on K8s](./Bentoml%20on%20k8s/)
 
 ---
 
