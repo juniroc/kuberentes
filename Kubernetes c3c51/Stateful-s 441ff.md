@@ -7,7 +7,7 @@
 
 ![Untitled](Stateful-s%20441ff/Untitled.png)
 
-Ex) 
+Ex)
 
 - Nginx 웹서버의 경우 모두 같은 서비스를 각 앱에 배포
 - Mongo DB (DB) 의 경우
@@ -129,7 +129,7 @@ metadata:
   name: stateful-test
 spec:
   replicas: 1
-    serviceName: "statefulset-test"
+	serviceName: "statefulset-test"
   selector:
     matchLabels:
       type: db
@@ -178,7 +178,7 @@ kubectl get pod
 
 ![Untitled](Stateful-s%20441ff/Untitled%2016.png)
 
-- `Replicaset` 은 동시에 2개가 추가로 생성되고, 이름이 Random하게 부여
+- `Replicaset` 은 동시에 2개가 추가로 생성되고, 이름이 Random하게 부여(AGE 부분을 확인해 보면 됨)
 - `StatefulSet` 은 순차적으로 생성되며, 생성 순서대로 index 가 부여됨.
 
 - 각각의 `pod`를 제거해보면
@@ -202,7 +202,7 @@ kubectl get pod
 
 ![Untitled](Stateful-s%20441ff/Untitled%2019.png)
 
-- `Replicas` :0 으로 줄일 경우
+- `Replicas:0` 으로 줄일 경우
 
 ![Untitled](Stateful-s%20441ff/Untitled%2020.png)
 
@@ -224,7 +224,6 @@ spec:
   resources:
     requests:
       storage: 1G
-
 ```
 
 - 동적으로 pvc 생성
